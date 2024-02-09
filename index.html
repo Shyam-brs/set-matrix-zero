@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrix Zeroing</title>
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Matrix Zeroing</h1>
+      <p>
+        The zeroMatrix function sets all elements in the matrix to 0 that are in
+        the same row or column as a 0 element. It does this by first creating
+        two sets, rowsToZero and colsToZero, which store the indices of rows and
+        columns that contain a 0 element. Then, for each row index in
+        rowsToZero, it sets all elements in that row to 0. Similarly, for each
+        column index in colsToZero, it sets all elements in that column to 0
+      </p>
+      <table id="matrix"></table>
+      <button onclick="zeroMatrix()">Zero Matrix</button>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
